@@ -15,13 +15,16 @@
 #     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
 #
 #	Chris Titus Additions:
-#
 #	- Dark Mode
 #	- One Command to launch and run
 #	- Chocolatey Install
 #	- O&O Shutup10 CFG and Run
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
+#   
+#	gldemichei modifications:
+#	- List of installed programs
+#	- Activated (previously disabled) onedrive
 #
 ##########
 # Default preset
@@ -33,8 +36,19 @@ $tweaks = @(
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
 	"Install7Zip",
-	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	"InstallVLC",
+	"InstallChrome",
+	"InstallGit",
+	"InstallPython",
+	"InstallPaintNet",
+	"InstallVSCode",
+	"InstallYoutubeDL",
+	"InstallZoom",
+	"InstallSpotfy",
+	"InstallQbittorrent",
+	"InstallWhatsApp",
+	"InstallFlux",
+	"InstallPowerToys",
 
 	### Windows Apps
 	"DebloatAll",
@@ -151,8 +165,8 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
+	#"DisableOneDrive",              # "EnableOneDrive",
+	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
@@ -216,15 +230,71 @@ Function Install7Zip {
 	choco install 7zip -y
 }
 
-Function InstallNotepadplusplus {
-	Write-Output "Installing Notepad++"
-	choco install notepadplusplus -y
+Function InstallVLC {
+	Write-Output "Installing VLC"
+	choco install vlc -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function InstallChrome {
+	Write-Output "Installing Chrome"
+	choco install googlechrome -y
 }
+
+Function InstallGit {
+	Write-Output "Installing Git"
+	choco install git -y
+}
+
+Function InstallPython {
+	Write-Output "Installing Python3"
+	choco install python3 -y
+}
+
+Function InstallPaintNet {
+	Write-Output "Installing Paint.net"
+	choco install paint.net -y
+}
+
+Function InstallVSCode {
+	Write-Output "Installing vscode"
+	choco install vscode -y
+}
+
+Function InstallYoutubeDL {
+	Write-Output "Installing youtube-dl"
+	choco install youtube-dl -y
+}
+
+Function InstallZoom {
+	Write-Output "Installing zoom"
+	choco install zoom -y
+}
+
+Function InstallSpotfy {
+	Write-Output "Installing spotfy"
+	choco install spotfy -y
+}
+
+Function InstallQbittorrent {
+	Write-Output "Installing qbittorrent"
+	choco install qbittorrent -y
+}
+
+Function InstallWhatsApp {
+	Write-Output "Installing whatsapp"
+	choco install whatsapp -y
+}
+
+Function InstallFlux {
+	Write-Output "Installing f.lux"
+	choco install f.lux -y
+}
+
+Function InstallPowerToys {
+	Write-Output "Installing PowerToys"
+	choco install powertoys -y
+}
+
 
 ##########
 # Privacy Tweaks
