@@ -29,4 +29,4 @@ Comment any thing you don't want out... Example:
 	"EnableSMB1",
 ```
 ## One command instalation
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/abdalrohman/win10script/master/win10debloat.ps1')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/gldemichei/win10script/master/win10debloat.ps1')"
