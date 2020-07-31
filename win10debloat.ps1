@@ -27,7 +27,7 @@
 #	- Activated (previously disabled) onedrive
 #   - Enable ActionCenter
 #	- Enable Indexing
-#
+#	- Enable WebSearch
 ##########
 # Default preset
 $tweaks = @(
@@ -59,7 +59,7 @@ $tweaks = @(
 	"DisableTelemetry",             # "EnableTelemetry",
 	"DisableWiFiSense",             # "EnableWiFiSense",
 	"DisableSmartScreen",         # "EnableSmartScreen",
-	"DisableWebSearch",             # "EnableWebSearch",
+	"EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
 	"DisableActivityHistory",       # "EnableActivityHistory",
 	"DisableBackgroundApps",        # "EnableBackgroundApps",
